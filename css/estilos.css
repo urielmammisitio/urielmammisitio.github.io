@@ -1,0 +1,115 @@
+/*Estilos cuerpo*/
+body{
+    text-align: justify;
+    font-family: sans-serif;
+    background-color: white;
+    color:black;
+  }
+  section{
+    padding: 1rem;
+    text-align: justify;
+  }
+  /*Estilos imagenes*/
+  .sprite {
+    position: relative;
+  }
+  .sprite > img{
+    width: 4rem;
+    height: 5rem;
+  }
+  /*Estilos botones*/
+  .control{
+    margin: 2px 0.5rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #f4f4f4;
+    font-size: 2rem;
+    color: black;
+    font-weight: bold;
+    padding: 0.2rem;
+  }
+  .jugar{
+    margin: auto;
+    border-radius: 5px;
+    border: none;
+    background-color: green;
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem;
+  }
+  /*Estilos tabla*/
+  .pad{
+    margin: -0.5rem auto auto auto;
+    background-color: grey;
+  }
+  #personajes{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    position: relative;
+  }
+  #personajes>tr>td{
+    width: 50%;
+    border: 1px solid black;
+  }
+  .tipoPersonajes{
+    width: 90%;
+  }
+  /*Estilos contenedor*/
+  #contenedor{
+    position: relative;
+    width: 95%;
+    border-radius: 5px;
+    height: 19rem;
+    display: block;
+    margin: auto;
+    background-color: gray;
+    background-image: url("fondo.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+  }
+  /*Estilos lose y win*/
+  #lose, #win{
+    text-align: center;
+    border-radius: 5px;
+    width: 75%;
+    padding: 0.5rem;
+    display: none;
+    position: absolute;
+    top:1rem;
+    left: 10%;
+    z-index: 100;
+    box-shadow: 10px 5px 5px black;
+    background-color: white;
+    border: 1px solid black;
+  }
+  .mensaje{
+    width: 90%;
+    margin: -0.5rem;
+    border-radius: 10px;
+  }
+  /*otros estilos*/
+  input{
+    border-radius: 5px;
+  }
+  p{
+    margin:0.5rem;
+  }
+  .nota{
+    color: gray;
+    font-family: serif;
+    text-align: center;
+  }
+  /*Estilos pie de página*/
+  footer{
+    text-align: center;
+    border-top: 1px solid black;
+    margin-top: 1rem;
+    padding: 1px;
+    color: black;
+  }
