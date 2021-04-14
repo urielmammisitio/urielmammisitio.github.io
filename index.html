@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+      content="width=device-width,
+       initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/ico"/>
+    <title>
+      Instrucciones
+    </title>
+    <!-- Hoja de estilos personal -->
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  </head>
+<!-- Cuerpo del programa -->
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">
+      <img src="favicon.ico" width="30" height="30" class="d-inline-block align-top" alt="">
+      UMAM-Juego
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" href="index.html">Instrucciones</a>
+        <a class="nav-link" href="juego.html">Juego</a>
+      </div>
+    </div>
+  </nav>
+  <section>
+    <h3>Contenido:</h3>
+    <ol>
+      <li><a href="#instrucciones">Instrucciones</a></li>
+      <li><a href="#personajes">Personajes</a></li>
+      <li><a href="#aclaraciones">Aclaraciones</a></li>
+    </ol>
+    <h3 id="instrucciones">Instrucciones:</h3>
+    <p>Artoria se encuentra hambrienta y necesita de tu ayuda para obtener una hamburguesa, utiliza los botones arriba ▲, abajo ▼, avanzar ► y retroceder ◄ para esquivar los obstáculos y enemigos que aparecen de forma aleatoria en el mapa, tu puntuación aumentara de manera automática con cada segundo que pase, pero ten cuidado si tocas alguno de lo los enemigos/obstáculos perderás de manera inmediata, supera 30 de éstos para alcanzar tu objetivo y ganar el juego. Suerte.</p>
+    <p><a href="juego.html"><button class="jugar">Jugar</button></a></p>
+    <h3>Personajes:</h3>
+    <table id="personajes">
+      <tr>
+        <td><b>Artoria</b><br>Tipo: Personaje jugador</td>
+        <td><b>Enemigo</b><br>Tipo: Personaje enemigo</td>
+      </tr>
+      <tr>
+        <td><img src="images/personaje.png" class="tipoPersonajes"></td>
+        <td><img src="images/enemigo.png" class="tipoPersonajes"></td>
+      </tr>
+      <tr>
+          <td><b>Obstáculo</b><br>Tipo: Enemigo</td>
+          <td><b>Hamburguesa</b><br>Tipo: Objetivo a alcanzar.</td>
+        </tr>
+        <tr>
+          <td><img src="images/enemigo2.png" class="tipoPersonajes"></td>
+          <td><img src="images/win.png" class="tipoPersonajes"></td>
+        </tr>
+    </table>
+    <h3 id="aclaraciones">Aclaraciones y Dudas:</h3>
+    <p>
+      <ol>
+        <li>Las imágenes aquí utilizadas pertenecen a sus respectivos creadores y unicamente se utilizan con fines decorativos sin ningún animo de lucro.</li>
+        <li>Se utilizo Bootstrap para la barra de navegación únicamente por cuestiones de tiempo, los demás estilos se realizaron de acuerdo a lo visto en clase y se encuentran en el archivo estilos.css, los restantes son creados/modificados por los js.</li>
+        <li>En polimorfismo.js se encuentran las clases de EnemigoWeb y PersonajeWeb junto a los custom element, en el archivo juego.js se encuentran las demás intrucciones: botones,intervalos, etc.</li>
+        <li>No se agregó el acceso con cuenta de Google ya que no se solicito en los requerimientos.</li>
+        <li>Para llenar el arreglo con los 31 enemigos se realizo de manera normal debido a que al utilizar un ciclo for no se lleno de manera correcta.</li>
+        <li>Se agregaron demasiados if por lo que considero la eficiencia no sera la mas optima.</li>
+      </ol>
+    </p>
+  </section>
+  <!-- Pie de página -->
+  <footer>
+    <p>
+      &copy; 2021
+      Alvarado Mariscal Uriel Martin.
+    </p>
+  </footer>
+  <!-- Script's de JS -->
+  <script type="text/javascript" src="js/polimorfismo.js"></script>
+  <script type="text/javascript" src="js/juego.js"></script>
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+      content="width=device-width,
+       initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/ico"/>
+    <title>
+      Juego
+    </title>
+    <!-- Hoja de estilos personal -->
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  </head>
+    <!-- Cuerpo del programa -->
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html">
+        <img src="favicon.ico" width="30" height="30" class="d-inline-block align-top" alt="">
+        UMAM-Juego
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" href="index.html">Instrucciones</a>
+          <a class="nav-link active" href="juego.html">Juego</a>
+        </div>
+      </div>
+    </nav>
+    <!-- Score -->
+    <br>
+    <p>Score <input type="text" readonly id="score" value="0"></p>
+    <!-- Contenedor con imágenes -->
+    <div id="contenedor">
+        
+    </div>
+    <!-- Controles -->
+    <p>
+      <table class="pad">
+        <tr>
+          <td></td>
+          <td>
+            <button onclick="arriba();" class="control">
+              ▲
+            </button>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+              <button onclick="retrocede();" class="control">
+                ◄
+              </button>
+          </td>
+          <td>
+            <button onclick="abajo();" class="control">
+              ▼
+            </button>
+          </td>
+          <td>
+              <button onclick="avanza();" class="control">
+                ►
+              </button>
+          </td>
+        </tr>
+      </table>
+    </p>
+    <!-- Contenedor perder -->
+    <div id="lose">
+        <h1>Perdiste</h1>
+        <p>Tu puntuación es</p>
+        <p><input type="text" id="puntuacionP" readonly></p>
+        <p>Mejor suerte la próxima.</p>
+        <p><input type="button" value="Volver a jugar" class="jugar" onclick="location.reload()"/></p>
+        <p><img src="images/pierde.png" class="mensaje"></p>
+    </div>
+    <!-- Contenedor ganar -->
+    <div id="win">
+      <h1>Ganaste</h1>
+      <p>Tu puntuación es</p>
+      <p><input type="text" id="puntuacionG" readonly></p>
+      <p>Gracias por jugar!</p>
+      <p><input type="button" value="Volver a jugar" class="jugar" onclick="location.reload()"/></p>
+      <p><img src="images/ganar.png" class="mensaje"></p>
+    </div>
+    <p class="nota"><i>Las imágenes aquí utilizadas pertenecen a sus respectivos creadores y unicamente se utilizan con fines decorativos sin ningún animo de lucro.</i></p>
+    <!-- Pie de página -->
+    <footer>
+      <p>
+        &copy; 2021
+        Alvarado Mariscal Uriel Martin.
+      </p>
+    </footer>
+    <!-- Script's de JS -->
+    <script type="text/javascript" src="js/polimorfismo.js"></script>
+    <script type="text/javascript" src="js/juego.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+  </body>
+</html>
